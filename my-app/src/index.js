@@ -7,15 +7,22 @@ import reportWebVitals from './reportWebVitals';
 // root DOM node에 렌더링
 import Library from './chapter_03/Library'; // Library 컴포넌트를 import
 import Clock from './chapter_04/Clock'; // Clock 컴포넌트를 import
+import CommentList from './chapter_05/CommentList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-setInterval(() => {
-  root.render(
-    <React.StrictMode>
-      <Clock />
-    </React.StrictMode>
-  )
-}, 1000); // 1초마다 Clock 컴포넌트를 렌더링
+root.render(
+  <React.StrictMode>
+    <CommentList />
+  </React.StrictMode>
+);
+
+// setInterval(() => {
+//   root.render(
+//     <React.StrictMode>
+//       <Clock />
+//     </React.StrictMode>
+//   )
+// }, 1000); // 1초마다 Clock 컴포넌트를 렌더링
 
 // root.render(
 //   <React.StrictMode>
