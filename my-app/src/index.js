@@ -4,14 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// root DOM node에 렌더링
 import Library from './chapter_03/Library'; // Library 컴포넌트를 import
-// Library 컴포넌트를 root DOM node에 렌더링
+import Clock from './chapter_04/Clock'; // Clock 컴포넌트를 import
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <Library />
-  </React.StrictMode>
-);
+setInterval(() => {
+  root.render(
+    <React.StrictMode>
+      <Clock />
+    </React.StrictMode>
+  )
+}, 1000); // 1초마다 Clock 컴포넌트를 렌더링
+
+// root.render(
+//   <React.StrictMode>
+//     <Library /> {/* Library 컴포넌트를 렌더링 */}
+//   </React.StrictMode>
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
