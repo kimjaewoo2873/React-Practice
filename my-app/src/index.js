@@ -8,13 +8,19 @@ import reportWebVitals from './reportWebVitals';
 import Library from './chapter_03/Library'; // Library 컴포넌트를 import
 import Clock from './chapter_04/Clock'; // Clock 컴포넌트를 import
 import CommentList from './chapter_05/CommentList';
-
+import NotificationList from './chapter_06/NotificationList';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CommentList />
+    <NotificationList />
   </React.StrictMode>
-);
+)
+
+// root.render(
+//   <React.StrictMode>
+//     <CommentList />
+//   </React.StrictMode>
+// );
 
 // setInterval(() => {
 //   root.render(
