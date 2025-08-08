@@ -9,12 +9,21 @@ import Library from './chapter_03/Library'; // Library 컴포넌트를 import
 import Clock from './chapter_04/Clock'; // Clock 컴포넌트를 import
 import CommentList from './chapter_05/CommentList';
 import NotificationList from './chapter_06/NotificationList';
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+import Accommodate from './chapter_07/Accommodate';
+
+const root = ReactDOM.createRoot(document.getElementById('root')); // root DOM 노드를 가져와서 ReactDOM의 createRoot 메서드로 초기화
+// root.render , 화면에 보여줄 컴포넌트를 실제로 렌더링 
+root.render( 
   <React.StrictMode>
-    <NotificationList />
+    <Accommodate />
   </React.StrictMode>
 )
+
+// root.render(
+//   <React.StrictMode>
+//     <NotificationList />
+//   </React.StrictMode>
+// )
 
 // root.render(
 //   <React.StrictMode>
