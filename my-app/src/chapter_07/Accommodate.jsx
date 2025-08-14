@@ -5,7 +5,7 @@ const MAX_CAPACITY = 10; // 최대 용량 상수 정의
 
 function Accommodate() { // Accommodate 컴포넌트 정의
     const [isFull, setIsFull] = useState(false);
-    const [count, increaseCount, decreaseCount] = useCounter(0); // useCounter 훅을 사용하여 count 상태와 증가/감소 함수들을 가져옴
+    const [count, increaseCount, decreaseCount] = useCounter(0); // useCounter 커스텀훅을 사용하여 count 상태와 증가/감소 함수들을 가져옴
 
     useEffect(() => {
         console.log("======================");
@@ -19,7 +19,7 @@ function Accommodate() { // Accommodate 컴포넌트 정의
     }, [count]);  // count가 변경될 때마다 실행되는 useEffect 훅
 
     return (
-        <div style={{ padding: 16}}>
+        <div style={{padding: 16}}>
             <p>{`총 ${count}명 수용헀습니다.`}</p>
 
             <button onClick={increaseCount} disabled={isFull}>입장</button>

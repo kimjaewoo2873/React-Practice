@@ -1,7 +1,9 @@
 import React from 'react';
 import Book from './Book'; // Book 컴포넌트를 import
  // Library 이름의 리액트 함수 컴포넌트, 3개의 Book 컴포넌트를 렌더링
-function Library(props) {
+ // Library 컴포넌트는 여러 개의 Book 컴포넌트를 포함하는 부모 컴포넌트 역할을 한다.
+
+function Library(props) { 
     return (
         <div>
             <Book name="귀멸의 칼날" numOfPage={1300} />
