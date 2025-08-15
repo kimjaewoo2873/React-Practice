@@ -10,14 +10,21 @@ import Clock from './chapter_04/Clock'; // Clock 컴포넌트를 import
 import CommentList from './chapter_05/CommentList';
 import NotificationList from './chapter_06/NotificationList';
 import Accommodate from './chapter_07/Accommodate';
+import ConfirmButton from './chapter_08/ConfirmButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root')); // root DOM 노드를 가져와서 ReactDOM의 createRoot 메서드로 초기화
 // root.render , 화면에 보여줄 컴포넌트를 실제로 렌더링 
-root.render( 
+root.render(
   <React.StrictMode>
-    <Accommodate />
+    <ConfirmButton />
   </React.StrictMode>
 )
+
+// root.render( 
+//   <React.StrictMode>
+//     <Accommodate />
+//   </React.StrictMode>
+// )
 
 // root.render(
 //   <React.StrictMode>
