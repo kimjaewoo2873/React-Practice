@@ -13,14 +13,21 @@ import Accommodate from './chapter_07/Accommodate';
 import ConfirmButton from './chapter_08/ConfirmButton';
 import LandingPage from './chapter_09/LandingPage';
 import AttendanceBook from './chapter_10/AttendanceBook';
+import SignUp from './chapter_11/SignUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root')); // root DOM 노드를 가져와서 ReactDOM의 createRoot 메서드로 초기화
 // root.render , 화면에 보여줄 컴포넌트를 실제로 렌더링 
 root.render (
   <React.StrictMode>
-    <AttendanceBook />
+    <SignUp />
   </React.StrictMode>
 )
+
+// root.render (
+//   <React.StrictMode>
+//     <AttendanceBook />
+//   </React.StrictMode>
+// )
 
 // root.render(
 //   <React.StrictMode>
